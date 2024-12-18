@@ -12,7 +12,7 @@ This clone replicates the landing page of a modern winery website from [Elegant 
 
 👵🏼 [Click to visit the original website](https://www.elegantthemes.com/layouts/food-drink/winery-home-page/live-demo)
 
-🤩 [Click to visit my clone]
+🤩 [Click to visit my clone](https://github.com/kiaramaldonado/website_clones/tree/main/winery)
 
 ### Comparison
 
