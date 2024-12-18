@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --color-primary: #280400;
+    --color-secondary: #666;
+    --color-button: #e8e2d7;
+    --color-footer: #222;
+    --color-social: #2ea3f2;
+
+    --color-menu: #20292f;
+    --color-menuhover: #71818c;
+    --color-bgsection: #f9f5f1;
+
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-other: "Open Sans", Arial;
+    
+    --font-paragraph: 0.875rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+
+    -moz-osx-font-smoothing: grayscale;
+    /* For smoother fonts, specially on smaller screens */
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-menu);
+}
+
+/* ------------------------------------------
+                  GENERALES
+--------------------------------------------*/
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-primary {
+    border: 2px solid var(--color-primary);
+    color: #000000;
+
+    font-size: 0.875rem;
+    font-family: var(--font-secondary);
+    font-style: italic;
+    padding: 1.25rem 3.125rem;
+
+    display: inline-block;
+}
+
+.button-primary:hover {
+    color: var(--color-button);
+    background-color: var(--color-primary);
+}
+
+.button-secondary {
+    border: 2px solid rgba(232, 226, 215, 0.2);
+    font-size: 0.875rem;
+    font-family: var(--font-secondary);
+    font-style: italic;
+    padding: 0.625rem 1.25rem;
+    color: var(--color-button);
+    transition: all 300ms ease 0s;
+    display: inline-block;
+}
+
+.button-secondary:hover {
+    border-color: var(--color-button);
+
+}
+
+/* ------------------------------------------
+                  HEADER
+--------------------------------------------*/
+.header{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17);
+
+    z-index: 1;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header__title{
+    font-size: 1.375rem;
+    color: var(--color-menu);
+    font-weight: 600;
+}
+
+.header__nav{
+   padding-top: 1.25rem;
+}
+
+.header__list{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+.header__item{
+    list-style: none;
+    padding-right: 1.25rem;
+    line-height: 1rem;
+}
+
+.header__link {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    padding-bottom: 1.25rem;
+    display: block;
+}
+
+.header__link:hover{
+    color: var(--color-menuhover);
+    opacity: 0.7;
+}
+
+.header__link--active{
+    font-weight: 600;
+}
+
+.header__svg {
+    display: none;
+}
+/* ------------------------------------------
+             ELEGANT SECTION
+--------------------------------------------*/
+
+.elegant {
+    background: url("../images/winery-61.jpg");
+    background-size: cover;
+    background-position: center bottom 0px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+.elegant__wrapper{
+    font-family: var(--font-secondary);
+    width: 90%;
+    margin: auto;
+}
+
+.elegant__column {
+    width: 50%;
+}
+
+.elegant__title{
+    font-size: 6.25rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+}
+
+.elegant__paragraph{
+    font-family: var(--font-paragraph);
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+/* ------------------------------------------
+             ABOUT SECTION
+--------------------------------------------*/
+
+.about {
+    background-color: var(--color-bgsection);
+    padding: 3.125rem;
+    font-family: var(--font-secondary);
+}
+
+.about__title {
+    font-size: 3.75rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-primary);
+
+    margin-top: 1.25rem;
+    margin-bottom: 5%;
+    line-height: 1.2;
+}
+
+.about__wrapper {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.about__column {
+    max-width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about__paragraph {
+    font-size: 0.875rem;
+    line-height: 2em;
+}
+
+.about__paragraph--brown {
+    color: var(--color-primary);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.about__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.about__image--moved {
+    max-width: 100%;
+    height: auto;
+    margin-top: -100px;
+    margin-left: 30px;
+}
+
+.about__image--rotate {
+    transform: rotate(180deg);
+}
+
+/* ------------------------------------------
+             GALLERY SECTION
+--------------------------------------------*/
+
+.gallery {
+    background-color: var(--color-bgsection);
+    padding: 3.125rem 0;
+    padding-bottom: 6.25rem;
+}
+
+.gallery__wrapper {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.gallery__column {
+    max-width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1.5625rem;
+}
+
+.gallery__image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------
+             VISIT SECTION
+--------------------------------------------*/
+
+.visit{
+    background: url(../images/winery-37.png), 
+    linear-gradient(90deg, var(--color-bgsection) 60%, var(--color-button) 60%);
+    background-size: cover;
+    background-position: 50%;
+
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+
+    font-family: var(--font-secondary);
+}
+
+.visit__wrapper{
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+    width: 90%;
+    margin: auto;
+}
+
+.visit__plan{
+    width: 50%;
+    margin-right: 5.5%;
+}
+
+.visit__title{
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    color: var(--color-primary);
+
+    margin-bottom: 8%;
+    margin-top: 0;
+    padding-top: 1.25rem;
+}
+
+.visit__paragraph{
+    font-size: var(--font-paragraph);
+    line-height: 2em;
+    color: var(--color-secondary)
+}
+
+.visit__paragraph--italic {
+    color: #ffffff;
+    font-style: italic;
+}
+
+.visit__address{
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 6.25rem 1.875rem;
+
+    max-width: 17.5rem;
+
+    transform: translateY(-150px);
+    /* To move it a little bit to the top */
+}
+
+.visit__address--h3{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1rem;
+    font-family: var(--font-other);
+    font-weight: 700;
+
+    margin-top: 2.5rem;
+}
+
+.visit__address--h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+
+/* ------------------------------------------
+                FOOTER
+--------------------------------------------*/
+
+.footer {
+    background-color: var(--color-footer);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.social__paragraph {
+    line-height: 2rem;
+}
+
+.social__list {
+    display: flex;
+    list-style: none;
+}
+
+.social__item {
+
+}
+
+.social__link {
+    color: var(--color-secondary);
+    margin-left: 1.25rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.social__link:hover {
+    color: var(--color-social);
+}
+
+/* ------------------------------------------
+                RESPONSIVE
+--------------------------------------------*/
+
+/* ------------------------------------------
+                Desktop
+--------------------------------------------*/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 990px;
+    }
+
+    .elegant__title {
+        font-size: 3.75rem;
+    }
+
+    .about__title {
+        font-size: 2.5rem;
+    }
+
+    .visit__title {
+        font-size: 2.5rem;
+    }
+
+    .visit__address--h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* ------------------------------------------
+                Tablet
+--------------------------------------------*/
+@media (max-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* --------- Header --------- */
+
+    .header__svg {
+        width: 2em;
+        height: 2em;
+        fill: var(--color-social);
+        background-color: #ffffff;
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    /* --------- Elegant --------- */
+
+    .elegant {
+        background-position: center;
+        padding-bottom: 50vw;
+    }
+
+    .elegant__column {
+        width: 80%;
+    }
+
+    .elegant__title {
+        font-size: 2.5rem;
+    }
+
+    /* --------- About --------- */
+
+    .about__title {
+        font-size: 1.75rem;
+    }
+
+    .about__column {
+        max-width: 50%;
+    }
+
+    .about__column:nth-child(3) {
+        max-width: 100%;
+    }
+
+    /* --------- Gallery --------- */
+
+    .gallery {
+        padding: 3.125rem 0;
+    }
+
+    .gallery__wrapper {
+        justify-content: center;
+    }
+
+    .gallery__column {
+        max-width: 50%;
+    }
+
+    /* --------- Visit --------- */
+
+    .visit__title {
+        font-size: 1.75rem;
+    }
+    
+    .visit__plan {
+        width: 100%;
+    }
+
+    .visit__address {
+        transform: translate(0px);
+    }
+
+    .visit__address--h2 {
+        font-size: 1.75rem;
+    }
+
+    /* --------- Footer --------- */
+
+    .social__paragraph {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+
+        order: 2;
+        /* To display the social icons first */
+    }
+
+    .social__list {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+/* ------------------------------------------
+                Mobile
+--------------------------------------------*/
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /* --------- About --------- */
+
+    .about__column {
+        max-width: 100%;
+    }
+
+    /* --------- Gallery --------- */
+
+    .gallery__column {
+        max-width: 100%;
+    }
+
+    .gallery__image {
+        max-height: 18.75rem;
+    }
+
+    /* --------- Visit --------- */
+
+    .visit {
+        background-image: url(../images/winery-37.png), linear-gradient(90deg, var(--color-bgsection) 75% var(--color-button) 75%);
+    }
+
+    /* --------- Footer --------- */
+
+    .social__paragraph {
+        font-size: 0.875rem;
+    }
+}
