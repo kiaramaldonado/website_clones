@@ -26,7 +26,7 @@ This clone replicates the homepage of a modern software website inspired by a pr
 
 👵🏼 [Click to visit the original website](https://www.elegantthemes.com/layouts/technology/software-home-page/live-demo)
 
-🤩 [Click to visit my clone](https://github.com/kiaramaldonado/website_clones/tree/main/winery)
+🤩 [Click to visit my clone](https://github.com/kiaramaldonado/website_clones/tree/main/software)
 
 ### Comparison
 
